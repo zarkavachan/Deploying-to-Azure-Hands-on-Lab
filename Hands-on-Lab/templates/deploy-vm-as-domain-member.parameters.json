@@ -9,7 +9,7 @@
             "value": "Subnet-1"
         },
         "vnetResourceGroup": {
-            "value": "CloudWorkShop"
+            "value": "CloudWorkshop"
         },
         "virtualMachineName": {
             "value": "Server-1-user3"
