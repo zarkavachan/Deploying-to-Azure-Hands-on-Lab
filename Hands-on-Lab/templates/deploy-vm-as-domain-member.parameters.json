@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworkId": {
+            "value": "VNet1"
+        },
+        "subnetName": {
+            "value": "Subnet-1"
+        },
+        "vnetResourceGroup": {
+            "value": "CloudWorkShop"
+        },
+        "virtualMachineName": {
+            "value": "Server-1-user3"
+        },
+        "windowsOSVersion": {
+            "value": "2019-Datacenter"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "domainToJoin": {
+            "value": "contoso.local"
+        },
+        "domainUsername": {
+            "value": "user3"
+        },
+        "domainPassword": {
+            "value": "user3password"
+        },
+        "adminUsername": {
+            "value": "domainAdmin"
+        },
+        "adminPassword": {
+            "value": "Password...1"
+        }
+    }
+}
