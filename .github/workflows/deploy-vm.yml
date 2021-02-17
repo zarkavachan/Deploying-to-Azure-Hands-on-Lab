@@ -24,7 +24,7 @@ jobs:
 
       # 登録したシークレットで Azure へログイン
       - name: Login to Azure
-        uses: azure/actions/login@v1
+        uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
