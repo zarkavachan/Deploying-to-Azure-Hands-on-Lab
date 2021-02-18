@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploy Virtual Machine
+name: AuthTest
 
 # Controls when the action will run. 
 on:
@@ -32,12 +32,12 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       # Azure CLI を使用し ARM テンプレートから仮想マシンを展開
-      - name: Deploy ARM Template
-        uses: azure/CLI@v1
-        with:
-          # {parameter file} には先の手順で作成したパラメーター ファイル名を指定
-          inlineScript: |
-            az deployment group create --resource-group ${{ github.event.inputs.resourceGroupName }} --template-file ./Hands-on-Lab/templates/deploy-vm-as-domain-member.json --parameters ./Hands-on-Lab/templates/deploy-vm-as-domain-member.parameters.json
+#      - name: Deploy ARM Template
+#        uses: azure/CLI@v1
+#        with:
+#          # {parameter file} には先の手順で作成したパラメーター ファイル名を指定
+#          inlineScript: |
+#            az deployment group create --resource-group ${{ github.event.inputs.resourceGroupName }} --template-file ./Hands-on-Lab/templates/deploy-vm-as-domain-member.json --parameters ./Hands-on-Lab/templates/deploy-vm-as-domain-member.parameters.json
 
       # ログアウト
       - name: Azure logout
