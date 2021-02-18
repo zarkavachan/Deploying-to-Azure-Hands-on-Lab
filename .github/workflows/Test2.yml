@@ -29,7 +29,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS2 }}
+          creds: ${{ secrets.AZURE_CREDENTIALS3 }}
 
       # Azure CLI を使用し ARM テンプレートから仮想マシンを展開
 #      - name: Deploy ARM Template
